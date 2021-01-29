@@ -1,0 +1,526 @@
+
+/* ---------- Specification --------*/
+
+body {
+	font: 400 15px 'Roboto', sans-serif;
+	color: #000;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+div, p, form, input, a, span, button {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+	font-size: 14px;
+	line-height: 1.4em;
+	color: #000;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	font-weight: 900;
+	line-height: 1.15em;
+}
+
+h1 {
+	font-size: 45px;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 19px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 17px;
+}
+
+a, button, input {
+	transition: all 0.5s ease;
+}
+
+button, input {
+	background-color: transparent;
+	border: none;
+	font-family: inherit;
+
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active {
+	outline: none;
+}
+
+.d-flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.justify-content-between {
+	justify-content: space-between;	
+}
+
+.justify-content-around {
+	justify-content: space-around;	
+}
+
+.align-items-center {
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.align-items-start {
+	-ms-align-items: flex-start;
+	align-items: flex-start;
+}
+
+.btn {
+	display: block;
+	width: 100%;
+	background-color: #4acc4d;
+	border-radius: 5px;
+	border: none;
+	padding: 18px 0;
+	color: #fff;
+	font-weight: 900;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.btn:hover {
+	box-shadow: 0 1px 10px rgba(0,0,0,0.8);
+	border-radius: 50px;
+}
+
+.btn:active {
+	box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}	
+
+.link {
+	font-size: 14px;
+	color: #fff;
+	font-weight: 900;
+}
+
+/* ---------- Write header --------*/
+.navigation {
+	padding: 18px 0;
+	background-color: #fff;
+	color: #000;
+	box-shadow: inset 0 0 14px rgba(0,0,0,0.21);
+}
+
+.logo__icon {
+	width: 47px;
+	height: 47px;
+	background-color: #1b3bde;
+	border-radius: 5px;
+	margin-right: 10px;
+	font-size: 27px;
+	line-height: 45px;
+	color: #fff;
+	text-align: center;
+}
+
+.logo__page-making {
+	color: #1b3bde;
+	font-weight: 900;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.logo__page-making span {
+	display: block;
+	font-size: 20px;
+}
+
+.nav {
+	margin: 0 auto 0 100px;
+
+}
+
+.nav__link {
+	border-radius: 5px;
+	padding: 7px 19px;
+	font-size: 13px;
+	color: #000;
+}
+
+.nav__link:hover {
+	color: #fff;
+	background-color: #000;
+}
+
+.tel {
+	color: #000;
+	font-weight: 900;
+	letter-spacing: 0.05em;
+}
+
+.offer {
+	background: url(../img/fone.jpg);
+	padding: 90px 0 125px;
+	background-color: #f0f7f7;
+}
+ 
+.web {
+	text-align: center;
+	max-width: 570px;
+	width: 100%;
+}
+
+.web__workshop {
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.web__title {
+	color: #1b3bde;
+	margin-top: 25px;
+	margin-bottom: 30px;
+}
+
+.web__time {
+	font-size: 14px;
+	color: #fff;
+	background-color: #000;
+	padding: 5px 0;
+	width: 145px;
+	text-align: center;
+	display: inline-block;
+	font-weight: 300;
+	border-radius: 3px;
+}
+
+.form {
+	max-width: 336px;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 13px 98px rgba(0,0,0,0.24);
+	border-radius: 5px;
+	padding: 38px 36px 28px;
+	text-align: center;
+}
+
+.form__text {
+	margin: 17px 0 30px;
+	font-size: 12px;
+	color: #adadad;
+}
+
+.form__input {
+	width: 100%;
+	margin-bottom: 17px;
+	border-bottom: 1px solid #acacac;
+	padding-bottom: 10px;
+	color: #acacac;
+	font-size: 13px;
+}
+
+.form__submit {
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+.form__input:hover, .form__input:focus, .form__input:active {
+	border-bottom: 1px solid #000;
+	color: #000;
+}
+
+.form__input:focus::-webkit-input-placeholder {
+	color: #000;
+}
+
+.form__input:focus::-moz-placeholder {
+	color: #000;
+}
+
+.form__input:focus:-moz-placeholder {
+	color: #000;
+}
+
+.form__input:focus:-ms-input-placeholder {
+	color: #000;
+}
+
+/* ---------- Write section 2--------*/
+
+.salary {
+	padding: 122px 0 30px;
+}
+
+.author {
+	background-color: #9d6bdc;
+	color: #fff;
+	max-width: 470px;
+	width: 100%;
+	padding: 38px 56px 45px 56px;
+	box-shadow: 0 13px 98px rgba(0,0,0,0.24);
+	border-radius: 5px;
+}
+
+.author__name {
+	font-weight: 900;
+	font-size: 18px;
+	margin-bottom: 15px;
+
+}
+
+.author__line {
+	font-size: 15px;
+	font-weight: 400;
+	margin-bottom: 0;
+	color: #fff;
+}
+
+.author__digits {
+	margin-top: 27px;
+	margin-bottom: 13px;
+}
+
+.author__element:not(:last-child) {
+	margin-right: 35px;
+}
+
+.author__number {
+	font-size: 39px;
+	font-weight: 700;
+	margin-right: 13px;
+}
+
+.author__text {
+	font-size: 12px;
+	font-weight: 400;
+}					
+
+.author__text_long {
+	width: 83px;
+}
+
+.author__text_short {
+	width: 48px;
+}
+
+.question {
+	max-width: 575px;
+}
+
+.question_bot-1 {
+	padding-right: 131px;
+}
+
+.question_bot-2 {
+	padding-left: 124px;
+}
+
+.question__title {
+	font-weight: 900;
+}
+
+.question__text {
+	font-size: 15px;
+	margin-top: 20px;
+	margin-bottom: 0;
+	font-weight: 400;
+}
+
+/* ---------- Write section 3--------*/
+
+.few {
+	padding: 30px 0 117px;
+}
+
+.money {
+	background-color: #000;
+}
+
+.question_white {
+	color: #fff;
+}
+
+.amount {
+	background-color: #ffde00;
+	width: 100%;
+	max-width: 470px;
+	padding: 94px 0;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	text-align: center;
+	box-shadow: 0 13px 98px rgba(0,0,0,0.24);
+	border-radius: 5px;
+}
+
+.amount__money {
+	font-size: 43px;
+	width: 230px;
+	font-weight: 900;	
+}
+
+.amount__money span {
+	font-size: 21px;
+	display: block;
+	font-weight: 400;
+}
+
+/* ---------- Write section 4--------*/
+
+.show {
+	background: url(../img/fone.jpg);
+	padding: 110px 0 70px;
+	background-color: #f0f7f7;	
+}
+
+.show-info {
+	margin-top: 75px;
+}
+
+.show-info__item {
+	max-width: 350px;
+	width: 100%;
+}
+
+.show-info__number {
+	flex-shrink: 0;
+	height: 70px;
+	width: 70px;
+	margin-right: 35px;
+	border-radius: 5px;
+	background-color: #1b3bde;
+	color: #fff;
+	font-weight: 900;
+	font-size: 26px;
+	
+}
+
+.show-info__title {
+	margin: 20px 0;
+	color: #1b3bde;
+	font-weight: 900;
+}
+
+.show-info__text {
+	width: 200px;
+}
+
+/* ---------- Write section 5--------*/
+.if-you {
+	padding: 85px 0 100px;
+}
+
+.if-info {
+	margin-top: 68px;
+}
+
+.if-info__item {
+	max-width: 348px;
+	width: 100%;
+	padding: 67px 45px;
+	text-align: center;
+	border-radius: 5px;
+	background-color: #4acc4d;
+	box-shadow: 0 13px 98px rgba(0,0,0,0.24);
+}
+
+.if-info__item_income {
+	background-color: #4ac7cc;
+	box-shadow: 0 7px 10px rgba(0,0,0,0.22);
+}
+
+.if-info__item_experience {
+	background-color: #dc6b83;
+}
+
+.if-info__icon {
+	color: #fff;
+	font-size: 42px;
+	margin-bottom: 15px;
+}
+
+.if-info__title {
+	font-weight: 900;
+	color: #fff;
+}
+
+/* ---------- Write section 6--------*/
+
+.ability {
+	background: url(../img/fone2.jpg);
+	background-color: #3350e0;
+	padding: 90px 0 110px;
+}
+
+.opportunity {
+	text-align: center;
+	max-width: 570px;
+	width: 100%;
+}
+
+.opportunity__workshop {
+	font-weight: 300;
+	font-size: 16px;
+	color: #fff;
+}
+
+.opportunity__title {
+	color: #fff;
+	margin-top: 25px;
+	margin-bottom: 30px;
+}
+
+.opportunity__line {
+	color: #fff;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.opportunity__line:not(:last-child) {
+	margin-right: 12px;
+}
+/* ---------- Write footer--------*/
+
+.footer {
+	padding: 20px 0;
+}
+
+.footer-text {
+	margin: 0 auto 0 160px;
+}
+
